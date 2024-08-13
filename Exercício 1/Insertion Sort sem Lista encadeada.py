@@ -9,9 +9,9 @@ def insertionSort(data):
 
 def main():
     data = []
-    n = int(input("Digite a quantidade de elementos:  "))
+    n = int(input("Digite a quantidade de elementos:"))
     for i in range(n):
-        element = int(input("Digite o elemento: "))
+        element = int(input("Digite o elemento:"))
         data.append(element)
 
     print("-----------------")
