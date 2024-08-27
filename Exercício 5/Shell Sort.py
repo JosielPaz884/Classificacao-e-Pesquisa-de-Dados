@@ -3,6 +3,7 @@ def shellSort(list):
     while nCount>0:
         for startIndex in range(nCount):
             jumpInsertionSort(list,startIndex,nCount)
+        print(f"Incremento de tamanho:{nCount}\nLista é: {list}")
         nCount=nCount//2
     return list
 
