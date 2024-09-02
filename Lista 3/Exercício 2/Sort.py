@@ -116,4 +116,5 @@ for tipo, resultado in resultados.items():
         tempos = [resultado[tamanho][nome] for tamanho in tamanhos]
         plt.plot(tamanhos, tempos, label=nome)
     plt.xlabel('Tamanho da lista')
-    plt
+    plt.legend()
+    plt.show()
