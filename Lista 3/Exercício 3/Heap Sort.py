@@ -1,3 +1,4 @@
+#Heapsort é um algoritmo de ordenação eficiente que utiliza um heap para ordenar uma lista de elementos.
 def heapsort(data):
     buildHeap(data)
     for i in range(len(data) - 1, 0, -1):
