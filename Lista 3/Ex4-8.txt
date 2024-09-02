@@ -1,0 +1,16 @@
+4) a)Verdadeira
+
+5) a) O extremo de uma lista já ordenada
+Pois o QuickSort divide a lista em duas partes e se coloca o pivô no extremo de uma lista já ordenada, uma parte estará vazia e
+outra com todos o elementos
+
+6) a) Verdadeira
+Pois ambos algoritmos de ordenação simples, mas o Insertion Sort tem um desempenho melhor em geral.
+Já que Insertion Sort precisa de uma única passagem pela lista para ordená-la, enquanto o 
+Bubblesort precisa de múltiplas passagens.
+
+7) c) O elemento central
+
+8) e) [1, 3, 7, 9, 8, 10, 12, 13, 15, 19]
+Pois o Bubblesort ordena a lista de forma incremental e em cada passo ele ordena um pouco mais a lista. 
+Após três passos, a lista estará parcialmente ordenada.
