@@ -26,9 +26,9 @@ def buscaBinariaRecursiva(arr, x, esquerda, direita):
         if arr[meio] == x:
             return meio
         elif arr[meio] < x:
-            return busca_binaria_recursiva(arr, x, meio + 1, direita)
+            return buscaBinariaRecursiva(arr, x, meio + 1, direita)
         else:
-            return busca_binaria_recursiva(arr, x, esquerda, meio - 1)
+            return buscaBinariaRecursiva(arr, x, esquerda, meio - 1)
     
     return -1
 
@@ -88,19 +88,19 @@ def pesquisaFibonacci(arr, x):
 arr = sorted(random.sample(range(1, 100000), 10000))
 x = random.choice(arr)  
 start = time.time()
-busca_binaria_iterativa(arr, x)
+buscaBinariaIterativa(arr, x)
 end = time.time()
 print(f"Busca Binária Iterativa: {end - start:.6f} segundos")
 start = time.time()
-busca_binaria_recursiva(arr, x, 0, len(arr) - 1)
+buscaBinariaRecursiva(arr, x, 0, len(arr) - 1)
 end = time.time()
 print(f"Busca Binária Recursiva: {end - start:.6f} segundos")
 start = time.time()
-pesquisa_por_salto(arr, x)
+pesquisaPorSalto(arr, x)
 end = time.time()
 print(f"Pesquisa por Salto: {end - start:.6f} segundos")
 start = time.time()
-pesquisa_fibonacci(arr, x)
+pesquisaFibonacci(arr, x)
 end = time.time()
 print(f"Pesquisa Fibonacci: {end - start:.6f} segundos")
 
