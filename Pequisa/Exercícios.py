@@ -121,3 +121,46 @@ print(f"Pesquisa Fibonacci: {end - start:.6f} segundos")
 #pesquisa Fibonacci não funcionarão corretamente. Além disso, a ordenação da lista 
 #também pode afetar a eficiência da pesquisa por salto e da pesquisa Fibonacci, pois 
 #elas dependem do tamanho do salto e do tamanho da lista, respectivamente.
+
+#4)
+def interpolationSearch(data):
+    if not data: 
+        print("The list is empty.")
+        return -1  
+    
+    low = 0
+    high = len(data) -1
+    x = int(input("Digite o número que quer procurar: "))
+    
+    while low <= high and x >= data[low] and x <= data[high]:
+        if data[high] == data[low]:
+            if data[low] == x:
+                return low
+            return -1  
+        
+        
+        mid = low + ((high - low) * (x - data[low]) // (data[high] - data[low]))
+        
+        if mid < low or mid > high:  
+            return -1  
+        
+        if data[mid] == x:
+            return mid
+        if data[mid] < x:
+            low = mid + 1
+        else:
+            high = mid - 1
+    
+    return -1  
+    
+def main():
+    n = int(input("Digite a quantidade de elementos:"))
+    data = []
+    for i in range(n):
+        x = int(input("Digite o elemento:"))
+        data.append(x)
+    
+    print(f"{interpolationSearch(data)}")
+    
+if __name__== "__main__":
+    main()
