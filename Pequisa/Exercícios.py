@@ -3,7 +3,7 @@ import time
 import math
 
 #1a)
-def busca_binaria_iterativa(arr, x):
+def buscaBinariaIterativa(arr, x):
     esquerda, direita = 0, len(arr) - 1
     
     while esquerda <= direita:
@@ -19,7 +19,7 @@ def busca_binaria_iterativa(arr, x):
     return -1
   
 #1b)
-def busca_binaria_recursiva(arr, x, esquerda, direita):
+def buscaBinariaRecursiva(arr, x, esquerda, direita):
     if direita >= esquerda:
         meio = esquerda + (direita - esquerda) // 2
         
@@ -34,7 +34,7 @@ def busca_binaria_recursiva(arr, x, esquerda, direita):
 
 
 #2a)
-def pesquisa_por_salto(arr, x):
+def pesquisaPorSalto(arr, x):
     n = len(arr)
     salto = int(math.sqrt(n))
     prev = 0
@@ -62,7 +62,7 @@ def fibonacci(n):
         fib.append(fib[i - 1] + fib[i - 2])
     return fib
 
-def pesquisa_fibonacci(arr, x):
+def pesquisaFibonacci(arr, x):
     n = len(arr)
     fib = fibonacci(n)
     
