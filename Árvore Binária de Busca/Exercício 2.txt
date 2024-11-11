@@ -1,0 +1,34 @@
+Árvore Rubro-Negra (Red-Black Tree)
+  O que é?: 
+    Uma árvore binária de busca auto-balanceada onde cada nó tem uma cor (vermelho ou preto) 
+    e segue regras específicas para garantir que a árvore permaneça balanceada.
+
+  Para que serve?: 
+    Usada em sistemas que requerem operações de busca, inserção e 
+    deleção eficientes, como em implementações de mapas e conjuntos.
+
+  Como funciona?: 
+    As regras incluem:
+      Cada nó é vermelho ou preto.
+      A raiz é sempre preta.
+      Todas as folhas (NIL) são pretas.
+      Se um nó é vermelho, ambos os filhos devem ser pretos.
+      Para cada nó, todos os caminhos da raiz até as folhas devem ter o mesmo número de nós pretos.
+
+B-Tree e B+ Tree
+  O que é?: 
+    Estruturas de dados de árvore balanceada que mantêm dados ordenados e 
+    permitem buscas, inserções e deleções em tempo logarítmico.
+
+  Para que serve?: 
+    Comumente usadas em sistemas de gerenciamento de banco de dados e sistemas de arquivos, 
+    onde grandes quantidades de dados precisam ser armazenadas e acessadas eficientemente.
+
+  Como funciona?:
+    B-Tree: Cada nó pode ter um número variável de filhos dentro de um intervalo definido. 
+    Os nós internos armazenam chaves que atuam como divisores para determinar a direção da busca. 
+    A árvore é balanceada, garantindo que todos os caminhos da raiz até as folhas tenham a mesma altura.
+
+    B+ Tree: Uma variação da B-Tree onde todas as folhas estão em um nível e contêm ponteiros para os registros de dados. 
+    Os nós internos apenas armazenam chaves, o que permite uma busca mais eficiente. A B+ Tree é frequentemente utilizada em 
+    sistemas de banco de dados devido à sua eficiência em operações de leitura e escrita, além de permitir a varredura sequencial dos dados.
